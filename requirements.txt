@@ -1,0 +1,26 @@
+fastapi
+uvicorn
+
+# Fix NumPy issue
+numpy==1.26.4
+
+# FAISS CPU
+faiss-cpu==1.7.4
+
+# Stable CPU torch with CVE fix
+torch==2.6.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Sentence transformers (compatible with torch 2.6)
+sentence-transformers==2.7.0
+
+# Transformers pinned for stability
+transformers==4.38.0
+google-generativeai
+
+
+# Other deps
+pydantic
+gdown
+scikit-learn
+tqdm
